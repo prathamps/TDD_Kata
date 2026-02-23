@@ -13,4 +13,8 @@ describe("isLeapYear()", () => {
     it('return false if year is divisible by 100', ()=>{
         expect(isLeapYear(1900)).toBe(false)
     })
+
+    it('return true if the year is divisible by 400', ()=>{
+        expect(isLeapYear(1600)).toBe(true)
+    })
 })
