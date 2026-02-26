@@ -17,7 +17,9 @@ export const add = (input_string: string) => {
                  if(parseInt(num_parts[i]) < 0){
                      throw new Error(`Invalid number: ${num_parts[i]}`);
                  }
+                 if(parseInt(num_parts[i]) < 1000){
                  sum+=parseInt(num_parts[i]);
+                 }
             }
             return sum;
         }
