@@ -21,6 +21,11 @@ describe("StringCalculator", () => {
 
     })
 
+    it("should return sum of numbers for a new line separated number string", ()=>{
+        expect(add('1\n2')).toBe(3);
+        expect(add('1\n2,3')).toBe(6);
+
+    })
 
 
 })
