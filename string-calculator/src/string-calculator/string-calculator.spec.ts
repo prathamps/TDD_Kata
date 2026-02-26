@@ -21,11 +21,22 @@ describe("StringCalculator", () => {
 
     })
 
-    it("should return sum of numbers for a new line separated number string", ()=>{
+    it("should return sum of numbers for a new line and comma separated number string", ()=>{
         expect(add('1\n2')).toBe(3);
         expect(add('1\n2,3')).toBe(6);
 
     })
+
+    it("should return sum of numbers for custom separators, numbers and new line string ", ()=>{
+       expect(add('//;\n1;2')).toBe(3);
+
+    })
+
+    it("should throw an exception if number is negative in the string ", ()=>{
+        expect(()=>add('1, -2, -3')).toThrow();
+    })
+
+
 
 
 })
