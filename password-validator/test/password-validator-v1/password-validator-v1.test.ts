@@ -17,4 +17,8 @@ describe("validatePassword", () => {
     it("should return false when password does not contain a lowercase letter", () => {
         expect(validatePassword("PASSWORD1")).toBe(false)
     })
+
+    it("should return false when password does not contain a number", () => {
+        expect(validatePassword("PASSWORDD")).toBe(false)
+    })
 });
