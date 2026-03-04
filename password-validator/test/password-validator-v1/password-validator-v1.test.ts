@@ -11,6 +11,10 @@ describe("validatePassword", () => {
     });
 
     it("should return false when password does not contain a capital letter", () => {
-        expect(validatePassword("password1_")).toBe(false)
+        expect(validatePassword("password1")).toBe(false)
+    })
+
+    it("should return false when password does not contain a lowercase letter", () => {
+        expect(validatePassword("PASSWORD1")).toBe(false)
     })
 });
