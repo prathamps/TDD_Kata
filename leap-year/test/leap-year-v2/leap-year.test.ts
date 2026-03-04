@@ -10,10 +10,16 @@ describe('isLeapYear', () => {
             expect(isLeapYear(year)).toBe(true);
         })
 
-        it.each([1500, 1800, 2100])('should return false when the year is divisible by 100 but not by 400', (year)=>{
+        it.each([1500, 1800, 2100])('should return false when the year is divisible by 100', (year)=>{
             expect(isLeapYear(year)).toBe(false)
-
         })
+
+        it.each([1600, 2000, 2400])(
+            "should return true when the year is divisible by 400",
+            (year) => {
+                expect(isLeapYear(year)).toBe(true);
+            }
+        );
     }
 )
 
