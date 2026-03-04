@@ -21,4 +21,8 @@ describe("validatePassword", () => {
     it("should return false when password does not contain a number", () => {
         expect(validatePassword("PASSWORDD")).toBe(false)
     })
+
+    it("should return false when password does not contain a underscore", () => {
+        expect(validatePassword("PASSWORD1")).toBe(false)
+    })
 });
