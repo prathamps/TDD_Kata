@@ -42,8 +42,8 @@ export function add(inputString: string): number {
     let sum = 0
     const negatives: number[] = []
 
-    for (let i = 0; i < parts.length; i++) {
-        const p = parts[i]
+    for (const element of parts) {
+        const p = element
         if (p === '') continue
         const n = Number(p)
         if (isNaN(n)) continue

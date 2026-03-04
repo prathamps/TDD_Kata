@@ -40,5 +40,8 @@ describe("StringCalculator", () => {
         expect(add('1001,1')).toBe(1);
     })
 
+    it('should return the sum of arbitrary number in a string with custom separator of any length', () => {
+        expect(add('//[***]\n1***2***3')).toBe(6);
+    })
 
 })
