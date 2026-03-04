@@ -6,9 +6,11 @@ describe("validatePassword", () => {
         expect(validatePassword("")).toBe(false)
     })
 
-    it("should return true when password has more than 8 characters", () => {
-        expect(validatePassword("password1")).toBe(true);
+    it("should return false when password has less than or equal to 8 characters", () => {
+        expect(validatePassword("password1")).toBe(false);
     });
 
-
+    it("should return false when password does not contain a capital letter", () => {
+        expect(validatePassword("password1_")).toBe(false)
+    })
 });
