@@ -6,4 +6,12 @@ describe("fizzBuzz", ()=>{
         expect(fizzBuzz(2)).toBe("2")
         expect(fizzBuzz(4)).toBe("4")
     })
+
+    it("returns 'fizz' for a number multiple of 3", ()=>{
+        expect(fizzBuzz(3)).toBe("fizz")
+        expect(fizzBuzz(6)).toBe("fizz")
+        expect(fizzBuzz(9)).toBe("fizz")
+    })
+
+
 })
