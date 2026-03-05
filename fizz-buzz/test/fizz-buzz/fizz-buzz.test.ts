@@ -13,5 +13,9 @@ describe("fizzBuzz", ()=>{
         expect(fizzBuzz(9)).toBe("fizz")
     })
 
-
+    it("returns 'buzz' for a number multiple of 5", () => {
+        expect(fizzBuzz(5)).toBe("buzz")
+        expect(fizzBuzz(10)).toBe("buzz")
+        expect(fizzBuzz(20)).toBe("buzz")
+    })
 })

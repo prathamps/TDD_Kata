@@ -1,4 +1,5 @@
-export const fizzBuzz = (value: number): string =>{
+export conmultiplest fizzBuzz = (value: number): string =>{
+    if(value % 5 === 0) return "buzz"
     if(value % 3 === 0) return "fizz";
     return value.toString()
 }
@@ -15,4 +16,10 @@ export const fizzBuzz = (value: number): string =>{
 // Second Cycle:
 // Red: returns 'fizz' for a number multiple of 3
 // Green: returns fizz for the number multiple of 3.
-// Refactor returns fizz for the multiple of 3.
+// Refactor: returns fizz for the multiple of 3.
+
+
+// Third Cycle:
+// Red: return 'buzz' for a number multiple of 5
+// Green: return 'buzz' for a number multiple of 5
+// Refactor: return 'buzz' for a number multiple of 5
