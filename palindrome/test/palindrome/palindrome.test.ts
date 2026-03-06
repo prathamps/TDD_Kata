@@ -29,4 +29,13 @@ describe("isPalindrome", ()=>{
     it('should return true for palindrome word with different cases', ()=>{
         expect(isPalindrome("Maam")).toBe(true)
     })
-})        
+
+    it("should return true for palindrome with spaces", ()=>{
+        expect(isPalindrome("ma am")).toBe(true)
+    })
+
+    it("should return true for palindrome with punctuation marks", ()=>{  
+    expect(isPalindrome("ma'a'm")).toBe(true)
+})   
+
+})
