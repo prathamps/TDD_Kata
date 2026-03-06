@@ -18,6 +18,10 @@ describe("isPalindrome", ()=>{
         expect(isPalindrome("aa")).toBe(true)
     })
 
+    it("should return true for a palindrome word", ()=>{
+        expect(isPalindrome("mayalayam")).toBe(true)
+    })
+
     it("should return true for odd length palindrome word", ()=>{
         expect(isPalindrome("aba")).toBe(true)
     })
