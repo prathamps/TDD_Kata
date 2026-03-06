@@ -8,11 +8,25 @@ describe("isPalindrome", ()=>{
 
     it('should return true for one single character string', ()=>{
         expect(isPalindrome("z")).toBe(true)
-})
+    })
 
-  it('should return false for 2 different characters', ()=>{
+    it('should return false for 2 different characters', ()=>{
         expect(isPalindrome("va")).toBe(false)
-})
+    })
 
+    it("should true for 2 repeated characters", ()=>{
+        expect(isPalindrome("aa")).toBe(true)
+    })
 
+    it("should return true for odd length palindrome word", ()=>{
+        expect(isPalindrome("aba")).toBe(true)
+    })
+
+    it("should return true for even length palindrome word", ()=>{
+        expect(isPalindrome("maam")).toBe(true)
+    })
+
+    it('should return true for palindrome word with different cases', ()=>{
+        expect(isPalindrome("Maam")).toBe(true)
+    })
 })        
