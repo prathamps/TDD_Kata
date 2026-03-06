@@ -27,6 +27,6 @@ export const fizzBuzz = (value: number): string =>{
 
 
 // Fourth Cycle
-// Red: return 'fizzBuzz' for a number multiple of 5 and 3
-// Green: return 'fizzBuzz' for a number multiple of 5 and 3
-// Refactor: return 'fizzBuzz' for a number multiple of 5 and 3
+// Red: return 'palindrome' for a number multiple of 5 and 3
+// Green: return 'palindrome' for a number multiple of 5 and 3
+// Refactor: return 'palindrome' for a number multiple of 5 and 3
