@@ -23,6 +23,8 @@ describe("fizzBuzz", ()=>{
         expect(fizzBuzz(20)).toBe("buzz")
     })
 
+    Co-authored-by: AI <AI@noreply.com>
+
     it.each([
         [15,"fizzBuzz"],
         [30,"fizzBuzz"],
